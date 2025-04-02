@@ -1,5 +1,5 @@
 context:
-  version: "0.81.3"
+  version: "0.82.0"
 
 package:
   name: baml-py
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/BoundaryML/baml/archive/refs/tags/${{ version }}.tar.gz
-    sha256: cb620e379101923fa1b53d1e9aaa82990079db1df65ec67fa5532bee9a4a4275
+    sha256: 0755ac53c37438ba60d46a9b24d5e6537511a63ca3969fe7b716a6cf99ccd72a
 
 build:
   number: 0
