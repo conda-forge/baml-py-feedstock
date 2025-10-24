@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/BoundaryML/baml/archive/refs/tags/${{ version }}.tar.gz
-    sha256: f3cbf1490e01d1c8c9ff883b87453b078a934dafba65ed3458876f2744a87291
+    sha256: 82d2b962f720514ae8c2259175e4a7ae855b3e04c1e329c81da49ef2bb33f21c
 
 build:
   number: 1
