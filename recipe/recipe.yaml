@@ -19,6 +19,12 @@ build:
   skip: is_abi3 and not is_python_min
   python:
     version_independent: ${{ is_abi3 }}
+    # Declare the console scripts so conda generates the wrappers itself. pip
+    # bakes the build prefix interpreter path into the Windows .exe launchers,
+    # which leaves baml-cli and baml broken once the prefix moves.
+    entry_points:
+      - baml-cli = baml_py:invoke_runtime_cli
+      - baml = baml_py:invoke_runtime_cli
 
 requirements:
   build:
