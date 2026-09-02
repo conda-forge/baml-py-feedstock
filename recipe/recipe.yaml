@@ -60,6 +60,9 @@ tests:
         - if: unix
           then: abi3audit $SP_DIR/baml_py/baml_py.abi3.so -s -v --assume-minimum-abi3 ${{ python_min }}
           else: abi3audit %SP_DIR%\baml_py\baml_py.pyd -s -v --assume-minimum-abi3 ${{ python_min }}
+  - script:
+      - baml-cli --version
+      - baml --help
 
 about:
   homepage: https://github.com/BoundaryML/baml
